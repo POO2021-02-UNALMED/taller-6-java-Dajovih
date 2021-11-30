@@ -22,7 +22,7 @@ public class Pais {
 		    final int valorActual = entry.getValue();
 		    if (valorActual > valorMax) {
 		        valorMax = valorActual;
-		        respuesta=entry.getKey();}}
+		        respuesta=entry.getClass();}}
 		return respuesta;}
 	
 	public String getNombre() {
