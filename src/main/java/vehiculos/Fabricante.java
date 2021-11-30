@@ -27,8 +27,8 @@ public class Fabricante {
 		        valorMax = valorActual;
 		        respuesta=entry.getKey();}}
 		for (int i=0;i<fabri.size();i++) {
-			if (Vehiculo.vehiculos.get(i).nombre==respuesta)
-				return Vehiculo.vehiculos.get(i).fabricante;
+			if (fabri.get(i).nombre==respuesta)
+				return fabri.get(i);
 		}
 	}
 	
