@@ -79,4 +79,7 @@ public class Vehiculo {
 		traccion=nuevo;}
 	
 	public void setFabricante(Fabricante nuevo) {
-		fabricante=nuevo;}}
+		fabricante=nuevo;}
+	
+	public static void setCantidadVehiculos(int nuevo) {
+		cantidadVehiculos=nuevo;}}
