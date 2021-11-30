@@ -15,6 +15,7 @@ public class Fabricante {
 	public static Fabricante fabricaMayorVentas() {
 		int valorMax=0;
 		String respuesta="";
+		Fabricante retorno=null;
 		for (int i=0;i<Vehiculo.vehiculos.size();i++) {
 			Vehiculo x=Vehiculo.vehiculos.get(i);
 			if (fabricantes.containsKey(x.fabricante.nombre)==true)
@@ -27,9 +28,9 @@ public class Fabricante {
 		        valorMax = valorActual;
 		        respuesta=entry.getKey();}}
 		for (int i=0;i<fabri.size();i++) {
-			if (fabri.get(i).nombre==respuesta)
-				return fabri.get(i);
-		}
+			if (fabri.get(i).nombre==respuesta) 
+				retorno=fabri.get(i);}
+		return retorno;
 	}
 	
 	public String getNombre() {
