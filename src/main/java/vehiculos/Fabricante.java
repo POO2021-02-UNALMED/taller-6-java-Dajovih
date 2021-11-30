@@ -29,7 +29,7 @@ public class Fabricante {
 		for (int i=0;i<fabricantes.size();i++) {
 			Fabricante y=fabricantes.get(i);
 			if (y.nombre==respuesta)
-					return Fabricante;
+					return y;
 		}}
 	
 	public String getNombre() {
