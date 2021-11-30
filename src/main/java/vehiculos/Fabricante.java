@@ -12,7 +12,7 @@ public class Fabricante {
 		this.nombre=nombre;
 		this.pais=pais;}
 	
-	public static String fabricaMayorVentas() {
+	public static Fabricante fabricaMayorVentas() {
 		int valorMax=0;
 		String respuesta="";
 		for (int i=0;i<Vehiculo.vehiculos.size();i++) {
@@ -26,7 +26,11 @@ public class Fabricante {
 		    if (valorActual > valorMax) {
 		        valorMax = valorActual;
 		        respuesta=entry.getKey();}}
-		return respuesta;}
+		for (int i=0;i<fabricantes.size();i++) {
+			Fabricante y=fabricantes.get(i);
+			if Fabricante.nombre==respuesta
+					return Fabricante
+		}}
 	
 	public String getNombre() {
 		return nombre;}
