@@ -2,7 +2,7 @@ package vehiculos;
 import java.util.*;
 
 public class Fabricante {
-	public static Map<String, Integer> fabricantes=new HashMap<Integer,Integer>();
+	public static Map<String, Integer> fabricantes=new HashMap<String,Integer>();
 	public static ArrayList<Fabricante> fabri=new ArrayList<Fabricante>();
 	private String nombre;
 	private Pais pais;
