@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Fabricante {
 	public static Map<String, Integer> fabricantes=new HashMap<String,Integer>();
-	public static ArrayList<Fabricante> fabricantes1=new ArryList<Fabricante>();
+	public static ArrayList<Fabricante> fabricantes1=new ArrayList<Fabricante>();
 	private String nombre;
 	private Pais pais;
 	
