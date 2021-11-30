@@ -28,7 +28,7 @@ public class Fabricante {
 		        respuesta=entry.getKey();}}
 		for (int i=0;i<fabricantes.size();i++) {
 			Fabricante y=fabricantes.get(i);
-			if (Fabricante.nombre==respuesta)
+			if (y.nombre==respuesta)
 					return Fabricante;
 		}}
 	
