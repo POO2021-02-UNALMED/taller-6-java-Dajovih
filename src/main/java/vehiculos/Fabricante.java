@@ -4,14 +4,13 @@ import java.util.Map;
 import java.util.ArrayList;
 
 public class Fabricante {
-	public static Map<String, Integer> fabricantes=new HashMap<String,Integer>();
+	public static Map<Fabricante, Integer> fabricantes=new HashMap<Fabricante,Integer>();
 	private String nombre;
 	private Pais pais;
 	
 	public Fabricante(String nombre, Pais pais) {
 		this.nombre=nombre;
 		this.pais=pais;
-		fabricantes1.add(this);}
 	
 	public static Fabricante fabricaMayorVentas() {
 		int valorMax=0;
