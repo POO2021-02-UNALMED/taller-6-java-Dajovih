@@ -5,33 +5,29 @@ import java.util.ArrayList;
 
 public class Fabricante {
 	public static Map<String, Integer> fabricantes=new HashMap<String,Integer>();
-	public static ArrayList<Fabricante> fabricantes1=new ArrayList<Fabricante>();
 	private String nombre;
 	private Pais pais;
 	
 	public Fabricante(String nombre, Pais pais) {
 		this.nombre=nombre;
-		this.pais=pais;}
+		this.pais=pais;
+		fabricantes1.add(this);}
 	
 	public static Fabricante fabricaMayorVentas() {
 		int valorMax=0;
-		String respuesta="";
+		Fabricante respuesta=null;
 		for (int i=0;i<Vehiculo.vehiculos.size();i++) {
 			Vehiculo x=Vehiculo.vehiculos.get(i);
-			if (fabricantes.containsKey(x.fabricante.getNombre())==true)
-				fabricantes.put(x.fabricante.nombre,fabricantes.get(x.fabricante.nombre)+1);
+			if (fabricantes.containsKey(x.fabricante)==true)
+				fabricantes.put(x.fabricante,fabricantes.get(x.fabricante)+1);
 			else
-				fabricantes.put(x.fabricante.nombre, 1);}
+				fabricantes.put(x.fabricante, 1);}
 		for (Map.Entry<String, Integer> entry : fabricantes.entrySet()) {
 		    final int valorActual = entry.getValue();
 		    if (valorActual > valorMax) {
 		        valorMax = valorActual;
 		        respuesta=entry.getKey();}}
-		for (int i=0;i<fabricantes.size();i++) {
-			Fabricante y=fabricantes1.get(i);
-			if (y.nombre==respuesta)
-					return y;
-		}}
+		return respuesta;}
 	
 	public String getNombre() {
 		return nombre;}
