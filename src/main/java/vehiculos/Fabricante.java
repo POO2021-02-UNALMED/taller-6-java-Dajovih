@@ -1,10 +1,10 @@
 package vehiculos;
-
 import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
 
 public class Fabricante {
 	public static Map<String, Integer> fabricantes=new HashMap<String,Integer>();
+	public static ArrayList<Fabricante> fabricantes1=new ArryList<Fabricante>();
 	private String nombre;
 	private Pais pais;
 	
@@ -27,7 +27,7 @@ public class Fabricante {
 		        valorMax = valorActual;
 		        respuesta=entry.getKey();}}
 		for (int i=0;i<fabricantes.size();i++) {
-			Fabricante y=fabricantes.get(i);
+			Fabricante y=fabricantes1.get(i);
 			if (y.nombre==respuesta)
 					return y;
 		}}
